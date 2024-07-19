@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro Consumidor</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/cadastroConsum.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li class="menu-item"><a href="index.html">Início</a></li>
+          <li class="menu-item"><a href="produtos.html">Produtos</a></li>
+        </ul>
+        <ul class="menu right-menu">
+          <li class="menu-item">
+            <a href="pedidos.html"
+              ><img src="images/carrinho.png" alt="Fazer Pedido"
+            /></a>
+          </li>
+          <li class="menu-item"><a href="cadastroConsum.html"><button>Cadastro</button></a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      
+      <h1>Cadastro de Consumidores</h1>
+      <form id="consumerForm">
+        <label>Nome: </label>
+        <input type="text" id="name" name="name" required />
+
+        <label>Email: </label>
+        <input type="text" id="email" name="email" required />
+
+        <label>Endereço Residencial: </label>
+        <input type="text" id="address" name="address" required>
+
+        <label>Foto (Opcional): </label>
+        <input type="file" id="photo" name="photo" accept="image/*">
+
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+
+    <footer>
+      <p>Desenvolvido por: Gabriela Almeida</p>
+    </footer>
+  </body>
+  </body>
+</html>
