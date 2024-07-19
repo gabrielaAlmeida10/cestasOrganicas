@@ -1,0 +1,62 @@
+main {
+  padding: 20px;
+  padding-bottom: 100px; 
+}
+
+.pedidos {
+  text-align: center;
+}
+
+.pedidos h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.pedido {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+.pedido h3 {
+  margin-top: 0;
+}
+
+.pedido ul {
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.pedido ul li {
+  margin-bottom: 5px;
+}
+
+.carrinho-produto {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.carrinho-produto img {
+  max-width: 80px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.carrinho-produto .descricao {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
