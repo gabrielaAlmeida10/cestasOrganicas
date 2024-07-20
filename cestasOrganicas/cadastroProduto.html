@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cooperativa de Produtos Orgânicos - Adicionar novo produto</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/cadastroProduto.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li class="menu-item active"><a href="index.html">Início</a></li>
+          <li class="menu-item"><a href="produtos.html">Produtos</a></li>
+        </ul>
+        <ul class="menu right-menu">
+          <li class="menu-item">
+            <a href="pedidos.html"
+              ><img src="images/carrinho.png" alt="Fazer Pedido"
+            /></a>
+          </li>
+          <li class="menu-item">
+            <a href="cadastroConsum.html"><button>Cadastro</button></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+          <h1>Cadastro de Produtos</h1>
+          <form id="productForm">
+              <label for="productName">Nome do Produto:</label>
+              <input type="text" id="productName" name="productName" required>
+
+              <label for="productImage">Imagem do Produto (opcional):</label>
+              <input type="file" id="productImage" name="productImage" accept="image/*">
+
+              <label for="productPrice">Preço:</label>
+              <input type="number" id="productPrice" name="productPrice" required step="0.01">
+
+              <button type="submit">Cadastrar Produto</button>
+          </form>
+      </div>
+  </main>
+    <footer>
+      <p>Desenvolvido por: Gabriela Almeida</p>
+    </footer>
+  </body>
+</html>
