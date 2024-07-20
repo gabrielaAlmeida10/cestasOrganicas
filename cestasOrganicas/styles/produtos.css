@@ -1,3 +1,4 @@
+/* Melhorias para a seção de produtos */
 .produtos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -6,23 +7,34 @@
     margin-bottom: 30px;
 }
 
+.produtos h2 {
+    grid-column: 1 / -1; /* Garante que o título ocupe toda a largura do grid */
+    text-align: center;  /* Centraliza o texto do título */
+    margin-bottom: 20px;
+}
+
 .produto {
     border: 1px solid #ddd;
     padding: 20px;
-    text-align: center;
     background-color: #f9f9f9;
-    max-width: 300px;  
-    margin: 20px auto; 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .produto img {
     max-width: 100%;
-    max-height: 100%;
-    width: auto;
     height: auto;
+    margin: 0 auto 15px;
+    display: block;
     border-bottom: 1px solid #ddd;
-    display: block;  
-    margin: 0 auto;  
+}
+
+.add-product {
+    display: flex;
+    justify-content: flex-start; /* Alinha os botões à esquerda */
+    gap: 10px;
+    margin: 20px 0;
 }
 
 .add-product button {
@@ -40,12 +52,13 @@
     background-color: #218838;
 }
 
-.footer{
-    position: relative; 
+.footer {
+    position: relative;
     bottom: 0;
     width: 100%;
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }

@@ -1,54 +1,63 @@
+/* Melhorias para a seção de pedidos */
 main {
   padding: 20px;
-  padding-bottom: 100px; 
+  padding-bottom: 100px;
 }
 
 .pedidos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.pedidos h2 {
+.title {
   font-size: 1.8rem;
   margin-bottom: 20px;
 }
 
 .pedido {
   border: 1px solid #ddd;
-  padding: 15px;
-  margin-bottom: 20px;
+  padding: 20px;
   background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .pedido h3 {
   margin-top: 0;
+  font-size: 1.6rem;
 }
 
 .pedido ul {
   padding: 0;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  margin: 10px 0;
   list-style: none;
 }
 
 .pedido ul li {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
 }
 
 .carrinho-produto {
   border-bottom: 1px solid #ccc;
   padding: 10px 0;
+  display: flex;
+  align-items: center;
 }
 
 .carrinho-produto img {
   max-width: 80px;
   height: auto;
-  vertical-align: middle;
   margin-right: 10px;
 }
 
 .carrinho-produto .descricao {
   display: inline-block;
   vertical-align: middle;
+  font-size: 1.1rem;
 }
 
 footer {
@@ -59,4 +68,5 @@ footer {
   color: #fff;
   text-align: center;
   padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }

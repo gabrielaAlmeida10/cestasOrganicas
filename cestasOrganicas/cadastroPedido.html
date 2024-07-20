@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pedidos</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/cadastroPedidos.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="menu">
+        <li class="menu-item"><a href="index.html">Início</a></li>
+        <li class="menu-item"><a href="produtos.html">Produtos</a></li>
+      </ul>
+      <ul class="menu right-menu">
+        <li class="menu-item">
+          <a href="pedidos.html"
+            ><img src="images/carrinho.png" alt="Fazer Pedido"
+          /></a>
+        </li>
+        <li class="menu-item">
+          <a href="cadastroConsum.html"><button>Cadastro</button></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+    <main>
+        <div class="container">
+            <h1>Cadastro de Pedidos</h1>
+            <form id="orderForm">
+                <label for="customerName">Nome do Cliente:</label>
+                <input type="text" id="customerName" name="customerName" required>
+
+                <label for="product">Produto:</label>
+                <input type="text" id="product" name="product" required>
+
+                <label for="quantity">Quantidade:</label>
+                <input type="number" id="quantity" name="quantity" required min="1">
+
+                <label for="orderDate">Data do Pedido:</label>
+                <input type="date" id="orderDate" name="orderDate" required>
+
+                <button type="submit">Cadastrar Pedido</button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+      <p>Desenvolvido por: Gabriela Almeida</p>
+    </footer>
+</body>
+</html>
