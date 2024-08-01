@@ -16,9 +16,7 @@
       </ul>
       <ul class="menu right-menu">
         <li class="menu-item">
-          <a href="pedidos.html"
-            ><img src="images/carrinho.png" alt="Fazer Pedido"
-          /></a>
+          <a href="pedidos.html"><img src="images/carrinho.png" alt="Fazer Pedido"></a>
         </li>
         <li class="menu-item">
           <a href="cadastroConsum.html"><button>Cadastro</button></a>
@@ -26,28 +24,47 @@
       </ul>
     </nav>
   </header>
-    <main>
-        <div class="container">
-            <h1>Cadastro de Pedidos</h1>
-            <form id="orderForm">
-                <label for="customerName">Nome do Cliente:</label>
-                <input type="text" id="customerName" name="customerName" required>
+  <main>
+    <div class="container">
+        <h1>Cadastro de Pedidos</h1>
+        <form id="orderForm">
+            <label for="customerName">Nome do Cliente:</label>
+            <input type="text" id="customerName" name="customerName" required>
 
+            <div class="product-selection">
                 <label for="product">Produto:</label>
-                <input type="text" id="product" name="product" required>
+                <select id="product" name="product">
+                    <option value="produto1">Produto 1</option>
+                    <option value="produto2">Produto 2</option>
+                    <option value="produto3">Produto 3</option>
+                    <option value="produto4">Produto 4</option>
+                </select>
+                <button type="button" class="add-product-btn" onclick="adicionarProduto()">Adicionar Produto</button>
+            </div>
 
-                <label for="quantity">Quantidade:</label>
-                <input type="number" id="quantity" name="quantity" required min="1">
+            <table id="productTable">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="productTableBody">
+                    <!-- Produtos adicionados serão inseridos aqui -->
+                </tbody>
+            </table>
 
-                <label for="orderDate">Data do Pedido:</label>
-                <input type="date" id="orderDate" name="orderDate" required>
+            <label for="orderDate">Data do Pedido:</label>
+            <input type="date" id="orderDate" name="orderDate" required>
 
-                <button type="submit">Cadastrar Pedido</button>
-            </form>
-        </div>
-    </main>
+            <button type="submit" onclick="cadastrarPedido(event)">Cadastrar Pedido</button>
+        </form>
+    </div>
+</main>
     <footer class="footer">
       <p>Desenvolvido por: Gabriela Almeida</p>
     </footer>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
